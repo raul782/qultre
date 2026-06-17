@@ -5,12 +5,12 @@ import { withProviders } from './Providers';
 
 function Footer() {
   const { t, i18n } = useTranslation();
-  const isEn = i18n.language === 'en';
-  const prefix = isEn ? '/en' : '';
+  const isEs = i18n.language === 'es';
+  const prefix = isEs ? '/es' : '';
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-slate-100 dark:bg-slate-950 border-t border-slate-200/50 dark:border-slate-800/50 py-16 transition-colors duration-300">
+    <footer className="relative z-10 bg-slate-100 dark:bg-slate-950 border-t border-slate-200/50 dark:border-slate-800/50 py-16 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
         
         {/* Logo and Description */}
@@ -30,6 +30,11 @@ function Footer() {
             <li>
               <a href={`${prefix}/about-us`} className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                 {t('nav.about_us')}
+              </a>
+            </li>
+            <li>
+              <a href={`${prefix}/team`} className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                {t('nav.team')}
               </a>
             </li>
             <li>
