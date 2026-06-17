@@ -1,23 +1,14 @@
 ---
+import { getEntry } from 'astro:content';
 import MarkdownLayout from '../layouts/MarkdownLayout.astro';
+
+const entry = await getEntry('pages', 'en/team');
+if (!entry) return Astro.redirect('/404');
+
+const { Content } = await entry.render();
+const { title, description, lang } = entry.data;
 ---
 
-<MarkdownLayout title="Our Team - Qultre" lang="en" description="The multidisciplinary group behind the Culture Graph.">
-  # Meet the Team
-  
-  Qultre was born out of the vision of a group of cultural researchers, interactive designers, and software engineers passionate about breaking down the invisible barriers of local knowledge.
-  
-  ## Founders
-  
-  ### Raúl Rodríguez — Founder & Product Architect
-  Raúl is the driver behind the **Culture Graph** methodology. With a background in distributed software systems and high-performance web engineering, he designed the relational data model connecting urban districts worldwide.
-  
-  ### Sofia Varella — Director of Cultural Research
-  Sofia leads our field research and content curation. As an urban anthropologist, she ensures that every neighborhood custom and local etiquette rule displayed on our cards reflects the exact native reality.
-  
-  ## Technical Vision
-  
-  We build Qultre using cutting-edge client-server technologies to ensure maximum page performance. By statically pre-rendering pages and leveraging Astro's islands architecture, we ship fluid 3D experiences via Three.js and WebGL without compromising mobile speeds or SEO.
-  
-  If you are interested in collaborating or have questions, reach out to the team at `team@qultre.com`.
+<MarkdownLayout title={title} description={description} lang={lang}>
+  <Content />
 </MarkdownLayout>

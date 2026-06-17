@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { Html } from '@react-three/drei';
 import { useWaitlistStore } from '@store/useWaitlistStore';
@@ -23,12 +23,23 @@ const getCityFlag = (id: string) => {
 };
 
 export default function FloatingCard({ initialPosition, accentColor, cityName, cityId }: FloatingCardProps) {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const groupRef = useRef<THREE.Group>(null);
   const [hovered, setHover] = useState(false);
   const selectedCity = useWaitlistStore((state) => state.selectedCity);
   const selectedCategory = useWaitlistStore((state) => state.selectedCategory);
   const setSelectedCity = useWaitlistStore((state) => state.setSelectedCity);
+
+  useEffect(() => {
+    if (hovered) {
+      document.body.style.cursor = 'pointer';
+    } else {
+      document.body.style.cursor = 'auto';
+    }
+    return () => {
+      document.body.style.cursor = 'auto';
+    };
+  }, [hovered]);
   
   const targetPos = new THREE.Vector3(...initialPosition);
   const isSelected = selectedCity === cityId;
@@ -159,7 +170,6 @@ export default function FloatingCard({ initialPosition, accentColor, cityName, c
         onClick={handleCardClick}
         onPointerOver={() => setHover(true)}
         onPointerOut={() => setHover(false)}
-        className="cursor-pointer"
       >
         <boxGeometry args={[2.0, 3.0, 0.1]} />
         <meshBasicMaterial visible={false} />
