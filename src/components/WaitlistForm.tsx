@@ -43,7 +43,7 @@ function WaitlistForm() {
     mutationFn: async (values: WaitlistInput) => {
       setSubmitting(true);
       setApiError(null);
-      
+
       const response = await fetch('/api/submit-email', {
         method: 'POST',
         headers: {
@@ -80,7 +80,7 @@ function WaitlistForm() {
     const box = card.getBoundingClientRect();
     const x = e.clientX - box.left - box.width / 2;
     const y = e.clientY - box.top - box.height / 2;
-    
+
     setTilt({
       x: -(y / (box.height / 2)) * 8, // Max 8 degrees tilt on X
       y: (x / (box.width / 2)) * 8   // Max 8 degrees tilt on Y
@@ -111,11 +111,11 @@ function WaitlistForm() {
 
   return (
     <div className="w-full max-w-md mx-auto">
-      <form 
+      <form
         onSubmit={handleSubmit(onSubmit)}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
-        style={{ 
+        style={{
           transform: `perspective(1000px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`,
           transition: 'transform 0.15s ease-out, background-color 0.3s, border-color 0.3s'
         }}
@@ -139,7 +139,7 @@ function WaitlistForm() {
             {...register('name')}
             type="text"
             className="w-full bg-slate-100/50 dark:bg-slate-950/50 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-600 focus:outline-none focus:border-primary-500 transition-colors"
-            placeholder="e.g. Gemini Explorer"
+            placeholder="e.g. John Miller"
           />
           {errors.name && <p className="text-red-500 text-[10px] mt-1">{errors.name.message}</p>}
         </div>
@@ -152,7 +152,7 @@ function WaitlistForm() {
             {...register('email')}
             type="email"
             className="w-full bg-slate-100/50 dark:bg-slate-950/50 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-600 focus:outline-none focus:border-primary-500 transition-colors"
-            placeholder="e.g. explorer@qultre.app"
+            placeholder="e.g. john.miller@example.com"
           />
           {errors.email && <p className="text-red-500 text-[10px] mt-1">{errors.email.message}</p>}
         </div>

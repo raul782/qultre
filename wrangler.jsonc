@@ -1,6 +1,10 @@
 {
     "name": "qultre",
     "compatibility_date": "2026-06-13",
+    "main": "@astrojs/cloudflare/entrypoints/server",
+    "compatibility_flags": [
+        "nodejs_compat"
+    ],
     "assets": {
         "directory": "./dist"
     }

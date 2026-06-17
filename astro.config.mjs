@@ -11,7 +11,7 @@ const isCloudflareBuild = !!process.env.CF_PAGES || process.env.NODE_ENV === 'pr
 
 // https://astro.build/config
 export default defineConfig({
-  output: 'static',
+  site: 'https://www.qultre.com',
   adapter: isCloudflareBuild ? cloudflare() : undefined,
   server: {
     host: true,
