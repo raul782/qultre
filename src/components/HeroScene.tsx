@@ -1,4 +1,4 @@
-import React, { Suspense, useState, useEffect } from 'react';
+import { Suspense, useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import InteractiveGlobe from './InteractiveGlobe';
 import FloatingCard from './FloatingCard';
@@ -11,7 +11,7 @@ let Stars: any = null;
 let OrbitControls: any = null;
 
 function HeroScene() {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const [isMounted, setIsMounted] = useState(false);
   const [threeLoaded, setThreeLoaded] = useState(false);
 

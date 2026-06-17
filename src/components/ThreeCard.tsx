@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useWaitlistStore } from '@store/useWaitlistStore';
 import { withProviders } from './Providers';
@@ -23,7 +23,7 @@ const getCityFlag = (id: string) => {
 };
 
 function ThreeCard() {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const selectedCity = useWaitlistStore((state) => state.selectedCity);
   const selectedCategory = useWaitlistStore((state) => state.selectedCategory);
   const setSelectedCity = useWaitlistStore((state) => state.setSelectedCity);

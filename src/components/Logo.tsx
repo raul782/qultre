@@ -1,11 +1,8 @@
-import React from 'react';
-
 interface LogoProps {
   colorClass?: string;
-  isTransparent?: boolean;
 }
 
-export default function Logo({ colorClass = "text-primary-600 dark:text-white", isTransparent = false }: LogoProps) {
+export default function Logo({ colorClass = "text-primary-600 dark:text-white" }: LogoProps) {
   return (
     <div className="flex items-center gap-2">
       <svg
