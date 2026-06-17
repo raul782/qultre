@@ -1,0 +1,19 @@
+services:
+  qultre:
+    container_name: qultre
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "4325:4321"
+    environment:
+      - NODE_ENV=production
+      - APP_ENV=prod
+    restart: always
+    networks:
+      - qultre-network
+
+networks:
+  qultre-network:
+    name: bessel-local-net
+    external: true

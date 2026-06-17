@@ -1,0 +1,19 @@
+services:
+  qultre:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      - APP_ENV=dev
+    command: pnpm run dev -- --host 0.0.0.0
+    networks:
+      - qultre-network
+
+networks:
+  qultre-network:
+    name: bessel-local-net
+    external: true

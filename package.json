@@ -1,0 +1,45 @@
+{
+  "name": "qultre",
+  "type": "module",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "astro dev --host 0.0.0.0",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview --host 0.0.0.0",
+    "astro": "astro",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "^12.2.0",
+    "@astrojs/mdx": "^4.3.13",
+    "@astrojs/react": "^4.4.2",
+    "@astrojs/sitemap": "^3.7.1",
+    "@react-three/drei": "^9.120.4",
+    "@react-three/fiber": "^9.0.0-alpha.8",
+    "@tailwindcss/vite": "^4.2.0",
+    "@tanstack/react-query": "^5.62.7",
+    "astro": "^5.17.1",
+    "clsx": "^2.1.1",
+    "i18next": "^24.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-hook-form": "^7.54.1",
+    "@hookform/resolvers": "^3.9.1",
+    "react-i18next": "^15.2.0",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss": "^4.2.0",
+    "three": "^0.172.0",
+    "zod": "^3.24.1",
+    "zustand": "^5.0.2"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.6",
+    "@tailwindcss/typography": "^0.5.19",
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.1",
+    "@types/three": "^0.170.0",
+    "typescript": "^6.0.3",
+    "vitest": "^2.1.8"
+  }
+}

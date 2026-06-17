@@ -1,0 +1,14 @@
+---
+import { getEntry } from 'astro:content';
+import MarkdownLayout from '../../layouts/MarkdownLayout.astro';
+
+const entry = await getEntry('pages', 'es/privacy');
+if (!entry) return Astro.redirect('/404');
+
+const { Content } = await entry.render();
+const { title, description, lang } = entry.data;
+---
+
+<MarkdownLayout title={title} description={description} lang={lang}>
+  <Content />
+</MarkdownLayout>

@@ -1,0 +1,66 @@
+{
+  "hero": {
+    "badge": "Beyond Borders",
+    "title1": "The World is More Than Headlines.",
+    "title2": "Connect Deeper.",
+    "subtitle": "Select a city from the interactive deck or spin the globe to dive into atomic, district-level realities and native customs.",
+    "cta": "Secure First-Wave Beta Entry",
+    "placeholderCity": "Orbiting cards..."
+  },
+  "nav": {
+    "vision": "Vision",
+    "explorer": "Card Deck",
+    "faq": "FAQ",
+    "team": "Team",
+    "about_us": "About Us",
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "language": "Language"
+  },
+  "features": {
+    "title": "Unveiling the Culture Graph",
+    "subtitle": "How Qultre connects local micro-information into a unified network of discovery.",
+    "f1_title": "1. Zoom into the Neighborhood",
+    "f1_desc": "Skip the tourist traps. Drop straight into the local rhythm with secrets curated by people who actually live there.",
+    "f2_title": "2. Pocket-Sized City Guides",
+    "f2_desc": "Tap a card to unlock instant, offline-ready street smarts—from buying a train ticket without looking lost to ordering coffee like a native.",
+    "f3_title": "3. Discover Invisible Threads",
+    "f3_desc": "See how the world connects. Fall in love with a hidden jazz alley in Madrid, and let Qultre reveal its sister district waiting for you in Lisbon."
+  },
+  "pricing": {
+    "title": "A Dual-Layer Model",
+    "subtitle": "Designed for curiosity, validated for utility.",
+    "free_title": "Static Layer",
+    "free_desc": "Always free access to standard regional metrics, basic attractions, and translation helpers.",
+    "premium_title": "Context Layer",
+    "premium_desc": "Deep cultural insights, neighborhood trend graphs, real-time safety indices, and offline micro-utility integrations."
+  },
+  "waitlist": {
+    "title": "Become a Local Native",
+    "subtitle": "We prioritize physical discovery frameworks. Gain immediate priority access vectors before standard public release deployments.",
+    "form": {
+      "name": "Your Name",
+      "email": "Email Address",
+      "cityPreference": "Preferred City to Explore First",
+      "button": "Secure First-Wave Beta Entry",
+      "submitting": "Securing spot..."
+    },
+    "success": "Secured! Welcome to the waitlist.",
+    "error": "Failed to connect. Please try again later."
+  },
+  "faqs": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about the Qultre project.",
+    "q1": "What exactly is Qultre?",
+    "a1": "Think of it as a living map that connects countries, cities, and neighborhoods together. Instead of jumping between ten different blogs, translation apps, and transit guides, Qultre weaves everything into a single visual story so you can step off the plane feeling like a local.",
+    "q2": "How do I use the City Cards?",
+    "a2": "They are bite-sized, interactive cheat-sheets for your phone! Tap a city card to get instant, clear answers to on-the-ground questions—like how to buy a metro pass, local tipping rules, or the best neighborhoods to explore without the crowds.",
+    "q3": "Is it free to join the waitlist?",
+    "a3": "100% free. By dropping your email today, you lock in early \"first-wave\" access to our pilot city decks before anyone else, helping us shape the ultimate way to see the world."
+  },
+  "footer": {
+    "description": "Connecting the world through structured local discovery. Discover districts, respect cultures, explore natively.",
+    "rights": "All rights reserved. Qultre.",
+    "madeBy": "Designed and built by Qultre Team."
+  }
+}

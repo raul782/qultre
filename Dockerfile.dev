@@ -1,0 +1,14 @@
+FROM node:24-alpine
+
+WORKDIR /app
+
+RUN npm install -g pnpm
+
+COPY pnpm-lock.yaml* package.json .npmrc* pnpm-workspace.yaml* ./
+RUN pnpm install
+
+COPY . .
+
+EXPOSE 4321
+
+CMD ["pnpm", "run", "dev", "--", "--host", "0.0.0.0"]

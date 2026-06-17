@@ -1,0 +1,66 @@
+{
+  "hero": {
+    "badge": "Más Allá de las Fronteras",
+    "title1": "El mundo es más que titulares.",
+    "title2": "Conecta más profundo.",
+    "subtitle": "Selecciona una ciudad de la baraja interactiva o gira el globo para sumergirte en realidades atómicas a nivel de distrito y costumbres locales.",
+    "cta": "Asegurar Entrada Beta de Primera Ola",
+    "placeholderCity": "Tarjetas en órbita..."
+  },
+  "nav": {
+    "vision": "Visión",
+    "explorer": "Baraja de Cartas",
+    "faq": "F.A.Q.",
+    "team": "Equipo",
+    "about_us": "Acerca de",
+    "terms": "Condiciones",
+    "privacy": "Privacidad",
+    "language": "Idioma"
+  },
+  "features": {
+    "title": "Revelando el Gráfico Cultural",
+    "subtitle": "Cómo Qultre conecta la microinformación local en una red unificada de descubrimiento.",
+    "f1_title": "1. Haz Zoom en el Barrio",
+    "f1_desc": "Evita las trampas para turistas. Déjate llevar por el ritmo local con secretos seleccionados por personas que realmente viven allí.",
+    "f2_title": "2. Guías de Ciudad de Bolsillo",
+    "f2_desc": "Toca una tarjeta para desbloquear astucia callejera instantánea y sin conexión, desde comprar un billete de tren sin parecer perdido hasta pedir café como un local.",
+    "f3_title": "3. Descubre Hilos Invisibles",
+    "f3_desc": "Mira cómo se conecta el mundo. Enamórate de un callejón de jazz escondido en Madrid, y deja que Qultre te revele su distrito hermano esperándote en Lisboa."
+  },
+  "pricing": {
+    "title": "Un Modelo de Dos Capas",
+    "subtitle": "Diseñado para la curiosidad, validado para la utilidad.",
+    "free_title": "Capa Estática",
+    "free_desc": "Acceso ilimitado a métricas regionales estándar, atracciones emblemáticas, ayudantes de vocabulario y tarifas base de transporte.",
+    "premium_title": "Capa de Contexto",
+    "premium_desc": "Información cultural profunda, gráficos de tendencias de vecindarios, índices de seguridad comunitaria, utilidades sin conexión y planeador inteligente."
+  },
+  "waitlist": {
+    "title": "Conviértete en Nativo Local",
+    "subtitle": "Priorizamos marcos de descubrimiento físico. Obtén vectores de acceso prioritario inmediato antes de los lanzamientos públicos estándar.",
+    "form": {
+      "name": "Tu Nombre",
+      "email": "Tu Correo Electrónico",
+      "cityPreference": "Ciudad Preferida para Explorar Primero",
+      "button": "Asegurar Entrada Beta de Primera Ola",
+      "submitting": "Asegurando lugar..."
+    },
+    "success": "¡Asegurado! Bienvenido a la lista de espera.",
+    "error": "Error de conexión. Inténtalo de nuevo más tarde."
+  },
+  "faqs": {
+    "title": "Preguntas Frecuentes",
+    "subtitle": "Todo lo que necesitas saber sobre el proyecto Qultre.",
+    "q1": "¿Qué es exactamente Qultre?",
+    "a1": "Piensa en ello como un mapa vivo que conecta países, ciudades y vecindarios. En lugar de saltar entre diez blogs diferentes, aplicaciones de traducción y guías de transporte, Qultre teje todo en una sola historia visual para que puedas bajarte del avión sintiéndote como un local.",
+    "q2": "¿Cómo utilizo las tarjetas de ciudad?",
+    "a2": "¡Son hojas de trucos interactivas y compactas para tu teléfono! Toca una tarjeta de ciudad para obtener respuestas instantáneas y claras a preguntas prácticas del día a día, como cómo comprar un pase de metro, reglas de propina locales o los mejores vecindarios para explorar sin multitudes.",
+    "q3": "¿Es gratis unirse a la lista de espera?",
+    "a3": "100% gratis. Al ingresar tu correo electrónico hoy, aseguras un acceso anticipado de \"primera ola\" a nuestras barajas de ciudades piloto antes que nadie, ayudándonos a diseñar la mejor forma de ver el mundo."
+  },
+  "footer": {
+    "description": "Conectando al mundo a través del descubrimiento local estructurado. Descubre distritos, respeta culturas, explora como un nativo.",
+    "rights": "Todos los derechos reservados. Qultre.",
+    "madeBy": "Diseñado y construido por el equipo de Qultre."
+  }
+}

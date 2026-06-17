@@ -1,0 +1,161 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import HeroScene from '@components/HeroScene';
+import ThreeCard from '@components/ThreeCard';
+import WaitlistForm from '@components/WaitlistForm';
+
+const lang = "es";
+---
+
+<BaseLayout title="Qultre - Reconstruyendo Conexiones Globales" lang={lang} description="Explora culturas nativas a través de barajas espaciales e información atómica a nivel de distrito.">
+  
+  {/* Spatial Background */}
+  <HeroScene client:only="react" lang={lang} />
+
+  {/* Scrollable Foreground Container */}
+  <div class="relative z-10 w-full min-h-screen pointer-events-none select-none">
+    
+    {/* Screen 1: Cinematic Spatial Hero */}
+    <section class="min-h-screen w-full flex flex-col justify-between items-center p-6 text-center">
+      
+      {/* Spacer for sticky header padding */}
+      <div class="h-20"></div>
+
+      {/* Hero Headings Overlay */}
+      <div class="max-w-4xl space-y-6 my-auto px-4 pointer-events-auto select-text">
+        <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest bg-primary-500/10 dark:bg-primary-500/20 text-primary-600 dark:text-primary-400 border border-primary-500/20">
+          Más Allá de las Fronteras
+        </span>
+        <h1 class="text-4xl sm:text-6xl md:text-8xl font-black font-display tracking-tight text-slate-900 dark:text-white uppercase leading-none">
+          El mundo es más que titulares.<br />
+          <span class="bg-gradient-to-r from-primary-500 via-secondary-500 to-accent-400 bg-clip-text text-transparent">
+            Conecta más profundo.
+          </span>
+        </h1>
+        <p class="text-base sm:text-lg md:text-xl text-slate-600 dark:text-slate-300 font-medium tracking-wide max-w-xl mx-auto leading-relaxed">
+          Selecciona una ciudad de la baraja interactiva o gira el globo para sumergirte en realidades atómicas a nivel de distrito y costumbres nativas.
+        </p>
+      </div>
+
+      {/* Scroll indicator */}
+      <div class="pb-16 animate-bounce pointer-events-auto">
+        <a href="#explorer" className="flex flex-col items-center gap-1 text-[10px] uppercase font-extrabold tracking-widest text-slate-400 hover:text-primary-500 transition-colors">
+          <span>Ver Explorer</span>
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    {/* Screen 2: Interactive Explorer (HTML Card display) */}
+    <section id="explorer" class="min-h-screen w-full bg-slate-50/70 dark:bg-slate-950/70 backdrop-blur-sm border-t border-slate-200/50 dark:border-slate-800/50 py-24 px-6 flex flex-col justify-center items-center pointer-events-auto select-text">
+      <div class="max-w-7xl mx-auto text-center space-y-16 w-full">
+        <div class="max-w-2xl mx-auto space-y-4">
+          <h2 class="text-3xl md:text-5xl font-black font-display tracking-tight text-slate-900 dark:text-white uppercase">
+            Baraja de Cartas
+          </h2>
+          <p class="text-slate-500 dark:text-slate-400 font-light text-sm sm:text-base">
+            Explora las métricas de la ciudad enfocada. Selecciona categorías para ver datos reales del Culture Graph sobre presupuestos, etiqueta local y transporte.
+          </p>
+        </div>
+        <ThreeCard client:only="react" lang={lang} />
+      </div>
+    </section>
+
+    {/* Screen 3: Graph Vision Details */}
+    <section class="py-24 bg-slate-100/80 dark:bg-slate-900/60 border-t border-slate-200/50 dark:border-slate-800/50 pointer-events-auto select-text relative">
+      <div class="max-w-7xl mx-auto px-6 text-center space-y-16">
+        <div class="max-w-2xl mx-auto space-y-4">
+          <h2 class="text-3xl md:text-5xl font-black font-display tracking-tight text-slate-900 dark:text-white uppercase">
+            Revelando el Gráfico Cultural
+          </h2>
+          <p class="text-slate-500 dark:text-slate-400 font-light text-base">
+            Cómo Qultre conecta la microinformación local en una red unificada de descubrimiento.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="p-8 glass rounded-3xl border border-slate-200/50 dark:border-slate-800/50 text-left space-y-4 shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-12 h-12 bg-primary-500/10 text-primary-600 dark:text-primary-400 rounded-2xl flex items-center justify-center font-bold font-display text-xl">
+              1
+            </div>
+            <h3 class="text-xl font-bold font-display text-slate-900 dark:text-white">Haz Zoom en el Barrio</h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed font-light">
+              Evita las trampas para turistas. Déjate llevar por el ritmo local con secretos seleccionados por personas que realmente viven allí.
+            </p>
+          </div>
+
+          <div class="p-8 glass rounded-3xl border border-slate-200/50 dark:border-slate-800/50 text-left space-y-4 shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-12 h-12 bg-secondary-500/10 text-secondary-600 dark:text-secondary-400 rounded-2xl flex items-center justify-center font-bold font-display text-xl">
+              2
+            </div>
+            <h3 class="text-xl font-bold font-display text-slate-900 dark:text-white">Guías de Ciudad de Bolsillo</h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed font-light">
+              Toca una tarjeta para desbloquear astucia callejera instantánea y sin conexión, desde comprar un billete de tren sin parecer perdido hasta pedir café como un local.
+            </p>
+          </div>
+
+          <div class="p-8 glass rounded-3xl border border-slate-200/50 dark:border-slate-800/50 text-left space-y-4 shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-12 h-12 bg-accent-500/10 text-accent-600 dark:text-accent-400 rounded-2xl flex items-center justify-center font-bold font-display text-xl">
+              3
+            </div>
+            <h3 class="text-xl font-bold font-display text-slate-900 dark:text-white">Descubre Hilos Invisibles</h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed font-light">
+              Mira cómo se conecta el mundo. Enamórate de un callejón de jazz escondido en Madrid, y deja que Qultre te revele su distrito hermano esperándote en Lisboa.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Screen 4: waitlist form Zone */}
+    <section id="waitlist" class="min-h-screen w-full bg-gradient-to-t from-slate-100 via-slate-50/90 to-transparent dark:from-slate-950 dark:via-slate-950/90 dark:to-transparent border-t border-slate-200/50 dark:border-slate-800/50 flex flex-col justify-center items-center py-24 px-6 pointer-events-auto select-text">
+      <WaitlistForm client:load lang={lang} />
+    </section>
+
+    {/* Screen 5: FAQs Panel */}
+    <section id="faq" class="py-24 bg-white/70 dark:bg-slate-950/70 backdrop-blur-md border-t border-slate-200/50 dark:border-slate-800/50 pointer-events-auto select-text">
+      <div class="max-w-4xl mx-auto px-6 space-y-12">
+        <div class="text-center space-y-4">
+          <h2 class="text-3xl md:text-5xl font-black font-display tracking-tight text-slate-900 dark:text-white uppercase">
+            Preguntas Frecuentes
+          </h2>
+          <p class="text-slate-500 dark:text-slate-400 font-light text-base">
+            Todo lo que necesitas saber sobre el proyecto Qultre.
+          </p>
+        </div>
+
+        <div class="space-y-6">
+          <div class="p-6 glass rounded-2xl border border-slate-200/50 dark:border-slate-800/50 space-y-2">
+            <h3 class="text-lg font-bold font-display text-slate-900 dark:text-white">
+              ¿Qué es exactamente Qultre?
+            </h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed font-light">
+              Piensa en ello como un mapa vivo que conecta países, ciudades y vecindarios. En lugar de saltar entre diez blogs diferentes, aplicaciones de traducción y guías de transporte, Qultre teje todo en una sola historia visual para que puedas bajarte del avión sintiéndote como un local.
+            </p>
+          </div>
+
+          <div class="p-6 glass rounded-2xl border border-slate-200/50 dark:border-slate-800/50 space-y-2">
+            <h3 class="text-lg font-bold font-display text-slate-900 dark:text-white">
+              ¿Cómo utilizo las tarjetas de ciudad?
+            </h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed font-light">
+              ¡Son hojas de trucos interactivas y compactas para tu teléfono! Toca una tarjeta de ciudad para obtener respuestas instantáneas y claras a preguntas prácticas del día a día, como cómo comprar un pase de metro, reglas de propina locales o los mejores vecindarios para explorar sin multitudes.
+            </p>
+          </div>
+
+          <div class="p-6 glass rounded-2xl border border-slate-200/50 dark:border-slate-800/50 space-y-2">
+            <h3 class="text-lg font-bold font-display text-slate-900 dark:text-white">
+              ¿Es gratis unirse a la lista de espera?
+            </h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed font-light">
+              100% gratis. Al ingresar tu correo electrónico hoy, aseguras un acceso anticipado de "primera ola" a nuestras barajas de ciudades piloto antes que nadie, ayudándonos a diseñar la mejor forma de ver el mundo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</BaseLayout>

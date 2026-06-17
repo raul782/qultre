@@ -1,0 +1,182 @@
+[
+  {
+    "id": "madrid",
+    "name": {
+      "en": "Madrid",
+      "es": "Madrid"
+    },
+    "country": {
+      "en": "Spain",
+      "es": "España"
+    },
+    "tagline": {
+      "en": "Vibrant avenues, late-night culture, and clear blue skies.",
+      "es": "Avenidas vibrantes, cultura nocturna y cielos azules despejados."
+    },
+    "finance": {
+      "currency": "EUR (€)",
+      "coffeePrice": {
+        "en": "€1.80 (Local Café)",
+        "es": "1,80 € (Café local)"
+      },
+      "taxiRate": {
+        "en": "€3.15 base rate",
+        "es": "3,15 € tarifa base"
+      },
+      "mealPrice": {
+        "en": "€15.00 daily menu",
+        "es": "15,00 € menú del día"
+      }
+    },
+    "tourism": {
+      "topDistrict": {
+        "en": "Malasaña & Chueca",
+        "es": "Malasaña y Chueca"
+      },
+      "localCustom": {
+        "en": "Tipping is appreciated but not mandatory (5-10%)",
+        "es": "La propina es valorada pero no obligatoria (5-10%)"
+      },
+      "mainAttraction": {
+        "en": "Prado Museum & Retiro Park",
+        "es": "Museo del Prado y Parque del Retiro"
+      }
+    },
+    "demographics": {
+      "populationDensity": "5,300 / km²",
+      "languages": {
+        "en": "Spanish",
+        "es": "Español"
+      },
+      "averageAge": "43.5 years / años"
+    },
+    "weather": {
+      "bestMonth": {
+        "en": "May or October",
+        "es": "Mayo u Octubre"
+      },
+      "tempHigh": "33°C (July / Julio)",
+      "tempLow": "2°C (January / Enero)"
+    }
+  },
+  {
+    "id": "tokyo",
+    "name": {
+      "en": "Tokyo",
+      "es": "Tokio"
+    },
+    "country": {
+      "en": "Japan",
+      "es": "Japón"
+    },
+    "tagline": {
+      "en": "High-tech skylines, peaceful shrines, and hyper-dense streets.",
+      "es": "Líneas de rascacielos tecnológicos, santuarios pacíficos y calles densas."
+    },
+    "finance": {
+      "currency": "JPY (¥)",
+      "coffeePrice": {
+        "en": "¥450 (Drip Coffee)",
+        "es": "¥450 (Café de filtro)"
+      },
+      "taxiRate": {
+        "en": "¥500 base rate",
+        "es": "¥500 tarifa base"
+      },
+      "mealPrice": {
+        "en": "¥1,100 average set lunch",
+        "es": "¥1.100 almuerzo menú"
+      }
+    },
+    "tourism": {
+      "topDistrict": {
+        "en": "Shibuya & Shinjuku",
+        "es": "Shibuya y Shinjuku"
+      },
+      "localCustom": {
+        "en": "Absolutely no tipping; it is seen as impolite",
+        "es": "No dar propina bajo ningún concepto; es descortés"
+      },
+      "mainAttraction": {
+        "en": "Senso-ji Temple & Shibuya Crossing",
+        "es": "Templo Senso-ji y Cruce de Shibuya"
+      }
+    },
+    "demographics": {
+      "populationDensity": "6,200 / km²",
+      "languages": {
+        "en": "Japanese",
+        "es": "Japonés"
+      },
+      "averageAge": "46.2 years / años"
+    },
+    "weather": {
+      "bestMonth": {
+        "en": "April or November",
+        "es": "Abril o Noviembre"
+      },
+      "tempHigh": "31°C (August / Agosto)",
+      "tempLow": "1°C (January / Enero)"
+    }
+  },
+  {
+    "id": "rome",
+    "name": {
+      "en": "Rome",
+      "es": "Roma"
+    },
+    "country": {
+      "en": "Italy",
+      "es": "Italia"
+    },
+    "tagline": {
+      "en": "Ancient ruins, cobblestone alleys, and open-air museums.",
+      "es": "Ruinas antiguas, callejones adoquinados y museos al aire libre."
+    },
+    "finance": {
+      "currency": "EUR (€)",
+      "coffeePrice": {
+        "en": "€1.30 (Espresso at bar)",
+        "es": "1,30 € (Espresso en barra)"
+      },
+      "taxiRate": {
+        "en": "€3.50 base rate",
+        "es": "3,50 € tarifa base"
+      },
+      "mealPrice": {
+        "en": "€18.00 average trattoria",
+        "es": "18,00 € trattoria media"
+      }
+    },
+    "tourism": {
+      "topDistrict": {
+        "en": "Trastevere & Monti",
+        "es": "Trastevere y Monti"
+      },
+      "localCustom": {
+        "en": "Pane e coperto (bread charge) is added to your bill",
+        "es": "El pane e coperto (cargo por pan) se añade a la cuenta"
+      },
+      "mainAttraction": {
+        "en": "Colosseum & Trevi Fountain",
+        "es": "Coliseo y Fontana di Trevi"
+      }
+    },
+    "demographics": {
+      "populationDensity": "2,200 / km²",
+      "languages": {
+        "en": "Italian",
+        "es": "Italiano"
+      },
+      "averageAge": "45.0 years / años"
+    },
+    "weather": {
+      "bestMonth": {
+        "en": "April or October",
+        "es": "Abril u Octubre"
+      },
+      "tempHigh": "32°C (July / Julio)",
+      "tempLow": "3°C (January / Enero)"
+    }
+  }
+]

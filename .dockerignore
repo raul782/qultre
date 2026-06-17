@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.astro/
+.git/
+.env*
+Dockerfile*
+docker-compose*
+Makefile
+README.md
