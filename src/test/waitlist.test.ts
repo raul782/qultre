@@ -55,7 +55,6 @@ describe('Qultre Waitlist Validation & State Store', () => {
   describe('Zustand useWaitlistStore', () => {
     beforeEach(() => {
       // Reset store state before each test
-      const store = useWaitlistStore.getState();
       useWaitlistStore.setState({
         isSubmitted: false,
         isSubmitting: false,
