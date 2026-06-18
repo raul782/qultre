@@ -2,7 +2,6 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --color-primary-*: initial;
   --color-primary-50: var(--primary-50);
   --color-primary-100: var(--primary-100);
   --color-primary-200: var(--primary-200);
@@ -15,7 +14,6 @@
   --color-primary-900: var(--primary-900);
   --color-primary-950: var(--primary-950);
 
-  --color-secondary-*: initial;
   --color-secondary-50: var(--secondary-50);
   --color-secondary-100: var(--secondary-100);
   --color-secondary-200: var(--secondary-200);
@@ -28,7 +26,6 @@
   --color-secondary-900: var(--secondary-900);
   --color-secondary-950: var(--secondary-950);
 
-  --color-accent-*: initial;
   --color-accent-50: var(--accent-50);
   --color-accent-100: var(--accent-100);
   --color-accent-200: var(--accent-200);
